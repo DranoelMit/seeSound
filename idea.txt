@@ -1,5 +1,8 @@
 seeSound 
 --------
+CodeJam Spring 2018
+--------
+Tim Leonard, Gil Austria, Liam Nagel, & Caleb Choy
 
 In-browser sound visualizer
 
@@ -21,4 +24,6 @@ PHASE 1: Reasearch
 -How do sound visualizers work 
 -Acessing the microphone from browser
 -updating the page(html/css) quickly to keep up with the sound
-	
+
+DAY 0:
+"Use VR for a sound visualizer" --> AFrame framework for VR-html	
