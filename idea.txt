@@ -1,0 +1,24 @@
+seeSound 
+--------
+
+In-browser sound visualizer
+
+
+BACKEND-------------------------------
+-Node.js / Express backend
+
+
+FRONTEND-------------------------------
+-html/css/js/bootstrap
+	-Need a constant listening to the microphone
+	-Some sort of constant updating to html
+	-HTML canvas?
+	
+
+TODO:
+
+PHASE 1: Reasearch
+-How do sound visualizers work 
+-Acessing the microphone from browser
+-updating the page(html/css) quickly to keep up with the sound
+	
