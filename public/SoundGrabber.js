@@ -17,6 +17,6 @@ window.onload = function() {
           //console.log(frequencyData);
           moveCube(frequencyData);
        }
-       audio.play();
+       //audio.play();
        render();
      };
