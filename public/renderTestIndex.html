@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>seeSound</title>
+          <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+     </head>
+
+     <body>
+          <a-scene fog="type: linear; color: blue">
+               <a-box color="red" position="0 2 -20" rotation="0 45 45" scale="2 2 2">
+                    <a-animation attribute="material.color" from="white" to="red" dur="1000"
+                    repeat="indefinite">
+                    </a-animation>
+               </a-box>
+
+               <a-sky color="#222"></a-sky>
+
+               <!-- <a-light type="ambient" color="#445451"></a-light>
+               <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+               <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+                    <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000"
+                    repeat="indefinite"></a-animation>
+               </a-box>
+
+               <a-entity id="blushing-cube" geometry="primitive: box">
+                    <a-animation attribute="material.color" from="white" to="red" dur="1000"></a-animation>
+               </a-entity>
+
+               <a-entity geometry="primitive: cone; radiusTop: 1" position="2 2 -5">
+                    <a-animation attribute="geometry.radiusTop" to="0.5"></a-animation>
+               </a-entity> -->
+          </a-scene>
+     </body>
+</html>
