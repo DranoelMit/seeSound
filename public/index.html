@@ -6,7 +6,25 @@
           <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
      </head>
      <body>
-     <a-scene>
-     </a-scene>     
+          <div id="song1">
+               <!-- This is the audio that gets processed by the soundGrabber-->
+               <audio>
+                    <source src="songs/aQuietMorning.mp3">
+               </audio>
+               <!-- This is the audio that gets gets processed by the soundGrabber-->
+               <audio autoplay loop>
+                    <source src="songs/aQuietMorning.mp3">
+               </audio>
+          </div>
+
+          <!-- THE GRAPHICS -->
+          <a-scene>
+                <a-box id="testCube" color="red" position="0 2 -20" rotation="0 45 45" scale="2 2 2">
+          </a-scene>
+          <!-- THE GRAPHICS -->
+
+
+     <script src="SoundGrabber.js"></script>
+     <script src="DispSound.js"></script>
      </body>
 </html>
