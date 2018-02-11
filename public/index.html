@@ -4,26 +4,28 @@
           <meta charset="utf-8">
           <title>seeSound</title>
           <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-          <!-- This is the audio that gets processed by the soundGrabber-->
      </head>
      <body>
-          <audio  loop>
+
+     <!-- This is the audio that gets processed by the soundGrabber-->
+          <audio loop>
                <source src="songs/aQuietMorning.mp3">
           </audio>
-          <!-- This is the audio that gets gets processed by the soundGrabber-->
-          <audio  loop>
+     <!-- This is the audio that gets gets processed by the soundGrabber-->
+          <audio loop>
                <source src="songs/aQuietMorning.mp3">
           </audio>
 
-          <form id="playForm" onsubmit="playMusic(); return false;">
-               <input type="submit" value="play"/>
-          </form>
+          <div id="warn">
+               <form id="playForm" onsubmit="playMusic(); return false;">
+                    <input type="submit" value="play"/>
+               </form>
+          </div>
 
 
 
           <!-- THE GRAPHICS -->
           <a-scene>
-                <a-box id="testCube" color="red" position="0 2 -20" scale="2 2 2">
           </a-scene>
           <!-- THE GRAPHICS -->
 

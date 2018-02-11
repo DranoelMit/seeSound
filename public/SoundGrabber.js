@@ -8,6 +8,7 @@ window.onload = function() {
 
        audioSrc.connect(analyser);
         frequencyData = new Uint8Array(analyser.frequencyBinCount);
+        spawn();
 
        // loop
        function render() {
@@ -15,7 +16,7 @@ window.onload = function() {
           analyser.getByteFrequencyData(frequencyData);
 
           //console.log(frequencyData);
-          moveCube(frequencyData);
+          update(frequencyData);
        }
        //audio.play();
        render();
