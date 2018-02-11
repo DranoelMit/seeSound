@@ -7,14 +7,17 @@
      </head>
 
      <body>
-          <a-scene fog="type: linear; color: blue">
+          <a-scene>
                <a-box color="red" position="0 2 -20" rotation="0 45 45" scale="2 2 2">
                     <a-animation attribute="material.color" from="white" to="red" dur="1000"
                     repeat="indefinite">
                     </a-animation>
                </a-box>
 
-               <a-sky color="#222"></a-sky>
+
+
+               <a-box src="images/Gradient.jpg" position="0 2 -5" rotation="0 45 45"
+               scale="2 2 2"></a-box>
 
                <!-- <a-light type="ambient" color="#445451"></a-light>
                <a-light type="point" intensity="2" position="2 4 4"></a-light>

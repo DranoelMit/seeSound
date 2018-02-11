@@ -3,25 +3,20 @@
   "version": "1.0.0",
   "description": "VR in-browser music visualizer",
   "main": "server.js",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DranoelMit/seeSound.git"
   },
-
-  "dependencies": {"express": "*"},
-
+  "dependencies": {
+    "express": "^4.16.2"
+  },
   "author": "Tim Leonard, Gil Austria, Liam Nagel, Caleb Choy",
-
   "license": "MIT",
-
   "bugs": {
     "url": "https://github.com/DranoelMit/seeSound/issues"
   },
-
   "homepage": "https://github.com/DranoelMit/seeSound#readme"
 }
