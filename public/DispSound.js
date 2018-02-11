@@ -5,7 +5,7 @@ function playMusic(){
      for(i=0; i<audios.length;i++){
      audios[i].play();
      }
-     document.getElementById('playForm').style.display = "none";
+     document.getElementById('warn').style.display = "none";
 }
 
 function getRandomColor() {
