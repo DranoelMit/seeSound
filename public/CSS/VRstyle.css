@@ -22,12 +22,12 @@ form{
     margin:              0px 0px;
     text-align:         center;
     opacity:            .75;
-    font-size: 35px; 
+    font-size: 35px;
     font-size: 8vw;
 }
 
 #warn .submit:active{
-    background-color:   #d9c835;
+    background-color:   #3568d9;
     box-shadow:         0 0px 4px #a3a1a1;
 }
 

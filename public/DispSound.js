@@ -33,23 +33,38 @@ function spawn(){
           x.setAttribute("color", getRandomColor());
           scene.appendChild(x);
      }
-     //not twerking
-     let y = document.createElement("a-box");
-     y.setAttribute("class", "spazCube");
-     y.setAttribute("position", "50 .5 0");
-     y.setAttribute("color", getRandomColor());
-     scene.appendChild(y);
+     const numCubes = 15;
+     for(i=0; i<numCubes; i++){
+          let y = document.createElement("a-box");
+          y.setAttribute("class", "spazCube");
+          y.setAttribute("position", ""+(60*(Math.cos(i*6.28319/numCubes)))+" "+40+" "+(60*Math.sin(i*6.28319/numCubes)));
+          y.setAttribute("rotation", ""+8*i+ " "+10*i+ " " + 12*i);
+          y.setAttribute("scale",  "1 1 1");
+          y.setAttribute("color", getRandomColor());
+          scene.appendChild(y);
+          
+          let z = document.createElement("a-box");
+          z.setAttribute("class", "spazCube");
+          z.setAttribute("position", ""+(30*(Math.cos(i*6.28319/numCubes)))+" "+40+" "+(30*Math.sin(i*6.28319/numCubes)));
+          z.setAttribute("rotation", ""+8*i+ " "+10*i+ " " + 12*i);
+          z.setAttribute("scale",  "1 1 1");
+          z.setAttribute("color", getRandomColor());
+          scene.appendChild(z);
+     }
 }
 
 function update(frequencyData){
 //there is 1024 indexes in the array
-var bars = document.getElementsByClassName("soundBars");
-for(i=0; i<bars.length; i++){
-     bars[i].setAttribute("scale", "1 "+"1" + Math.pow(frequencyData[i], 1/2.5));
-}
+     var bars = document.getElementsByClassName("soundBars");
+     for(i=0; i<bars.length; i++){
+          bars[i].setAttribute("scale", "1 "+  (3+Math.sqrt(frequencyData[i])) + " 1");
+     }
 
-var cubes = document.getElementsByClassName("spazCube");
-for(i=0; i<cubes.length; i++){
-     cubes[i].setAttribute("scale", ""+frequencyData[Math.random()*frequencyData.length]/10+" "+frequencyData[Math.random()*frequencyData.length]/10+" "+ frequencyData[Math.random()*frequencyData.length]/10);
-}
+     var cubes = document.getElementsByClassName("spazCube");
+     for(i=0; i<cubes.length; i++){
+
+          cubes[i].setAttribute("scale", ""+(Math.sqrt(frequencyData[i]))+" "
+                                           +(Math.sqrt(frequencyData[i*5]))+" "
+                                           +(Math.sqrt(frequencyData[i*10])));
+     }
 };
