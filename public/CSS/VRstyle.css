@@ -2,6 +2,8 @@
     background-color:   transparent;
     position:           absolute;
     display:            -webkit-flex;
+    display:            -moz-box;
+    display:            -ms-flexbox;
     display:            flex;
     justify-content: center;
     justify-content: space-around;
@@ -14,7 +16,7 @@
     background-blend-mode: darken;
     
     
-    display: block;
+    display:            block;
     
     position:           relative;
     color:              darkslategrey;
@@ -74,12 +76,13 @@ form{
 
 @media (orientation: portrait) {
     #warn .submit{
-        padding: 70% 8vw;
+        height: 100%;
     }
 }
 
 @media (orientation: landscape) {
     #warn .submit{
-        padding: 20% 8vw;
+        text-align: center;
+        height: 100%;
     }
 }
