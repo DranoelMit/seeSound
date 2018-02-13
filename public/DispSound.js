@@ -39,15 +39,15 @@ function spawn(){
      for(i=0; i<numCubes; i++){
           let y = document.createElement("a-box");
           y.setAttribute("class", "spazCube");
-          y.setAttribute("position", ""+(60*(Math.cos(i*6.28319/numCubes)))+" "+40+" "+(60*Math.sin(i*6.28319/numCubes)));
+          y.setAttribute("position", ""+(160*(Math.cos(i*6.28319/numCubes)))+" "+30+" "+(160*Math.sin(i*6.28319/numCubes)));
           y.setAttribute("rotation", ""+8*i+ " "+10*i+ " " + 12*i);
           y.setAttribute("scale",  "1 1 1");
           y.setAttribute("color", getRandomColor());
           scene.appendChild(y);
-          
+
           let z = document.createElement("a-box");
           z.setAttribute("class", "spazCube");
-          z.setAttribute("position", ""+(30*(Math.cos(i*6.28319/numCubes)))+" "+40+" "+(30*Math.sin(i*6.28319/numCubes)));
+          z.setAttribute("position", ""+(80*(Math.cos(i*6.28319/numCubes)))+" "+40+" "+(80*Math.sin(i*6.28319/numCubes)));
           z.setAttribute("rotation", ""+8*i+ " "+10*i+ " " + 12*i);
           z.setAttribute("scale",  "1 1 1");
           z.setAttribute("color", getRandomColor());
