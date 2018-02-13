@@ -11,6 +11,8 @@ function playMusic(choice){
      audios[i].play();
      }
      document.getElementById('warn').style.display = "none";
+     document.getElementById('default_music').style.display = "none";
+     document.getElementById('MusicUpload').style.display = "none";
 }
 
 function getRandomColor() {
