@@ -5,6 +5,8 @@
           <title>seeSound</title>
           <link rel="stylesheet" type="text/css" href="CSS/VRstyle.css">
           <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+          
+          
      </head>
      <body>
 
@@ -16,13 +18,36 @@
           <audio loop>
                <source src="songs/aQuietMorning.mp3">
           </audio>
-
+          
+         
+         
           <div id="warn">
+              
                <form id="playForm" onsubmit="playMusic(); return false;">
                     <input type="submit" class="submit" value="touch anywhere to begin"/>
                </form>
+              
           </div>
 
+         
+         <div id="default_music">
+            <form id="music1" onsubmit="changeMusic(); playMusic(); return false;">
+                <input type="submit" class="submit" value="A Quiet Morning"/>
+            </form>
+             
+            <form id="music2" onsubmit="changeMusic(); playMusic(); return false;">
+                <input type="submit" class="submit" value="Music2"/> 
+            </form>
+             
+            <form id="music3" onsubmit="changeMusic(); playMusic(); return false">
+                <input type="submit" class="submit" value="Music3"/> 
+            </form>
+         </div> 
+         
+         
+         <div id="MusicUpload">
+            
+         </div>
 
 
           <!-- THE GRAPHICS -->

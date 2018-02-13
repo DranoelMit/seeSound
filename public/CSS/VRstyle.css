@@ -1,3 +1,16 @@
+#default_music {
+    display:        -webkit-flex;
+    display:        flex;
+    position:       relative;
+    justify-content: center;
+    justify-content: space-around;
+    z-index:        2;
+}
+
+#default_music .submit {
+    
+}
+
 
 form{
     -webkit-appearance: none;
