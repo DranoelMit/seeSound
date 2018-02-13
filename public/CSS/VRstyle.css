@@ -59,13 +59,14 @@ form{
     background-color:   rgba(#35aaba, 0.17);
     border:             none;
     color:              slategrey;
-    padding:            60vh 8vw ;
+    padding:            49vh 8vw ;
     text-decoration:    none;
     margin:             0px 0px;
     text-align:         center;
     opacity:            .75;
     font-size:          35px;
     font-size:          8vw;
+    vertical-align:     middle; 
 }
 
 #warn .submit:active{
@@ -76,7 +77,21 @@ form{
 
 @media (orientation: portrait) {
     #warn .submit{
+        display: flex;
+        align-self: center;
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #default_music{
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    #default_music .submit {
+        width: 100%;
+        font-size: 8vw;
     }
 }
 

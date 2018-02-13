@@ -9,13 +9,16 @@
           
      </head>
      <body>
+         
+         <audio id="audiotag1" src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3" preload="auto"></audio>
+         <audio id="audiotag2" src="songs/Take%20me%20back.m4a" preload="auto"></audio>
 
      <!-- This is the audio that gets processed by the soundGrabber-->
-          <audio loop>
+          <audio id="loop1" loop>
                <source src="songs/aQuietMorning.mp3">
           </audio>
      <!-- This is the audio that gets gets processed by the soundGrabber-->
-          <audio loop>
+          <audio id="loop2" loop>
                <source src="songs/aQuietMorning.mp3">
           </audio>
           
@@ -60,5 +63,6 @@
 
      <script src="SoundGrabber.js"></script>
      <script src="DispSound.js"></script>
+     <script src="MusicChanger.js"></script>
      </body>
 </html>
