@@ -1,12 +1,15 @@
-function setBackground(choice)
-{
-     document.getElementById('background').setAttribute("src", "./images/choice" + "360.jpg" );
+function setBackground(choice){
+     let choiceGuide ={
+          "audiotag1" : "./images/tunnel.jpg",
+          "audiotag2" : "./images/tunnel.jpg",
+          "audiotag3" :  "./images/tunnel.jpg"
+     };
+     document.getElementById('background').setAttribute("src", choiceGuide[choice]);
 }
 
 function playMusic(choice){
-     //setBackground(choice);
-     var audios = document.getElementsByTagName('audio');
-
+     setBackground(choice);
+     var audios = document.getElementsByClassName(choice);
      for(i=0; i<audios.length;i++){
      audios[i].play();
      }
@@ -15,10 +18,10 @@ function playMusic(choice){
      document.getElementById('MusicUpload').style.display = "none";
 }
 
-function getRandomColor() {
+function getRandomColor(){
   var letters = '0123456789ABCDEF';
   var color = '#';
-  for (var i = 0; i < 6; i++) {
+  for(i=0; i < 6; i++){
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;

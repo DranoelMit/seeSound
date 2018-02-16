@@ -6,43 +6,55 @@
           <link rel="stylesheet" type="text/css" href="./CSS/VRstyle.css">
           <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 
-
      </head>
      <body>
 
-         <audio id="audiotag1" src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3" preload="auto"></audio>
-         <audio id="audiotag2" src="songs/Take%20me%20back.m4a" preload="auto"></audio>
 
      <!-- This is the audio that gets processed by the soundGrabber-->
-          <audio id="loop1" loop>
-               <source src="songs/aQuietMorning.mp3">
-          </audio>
+     <audio class="audiotag1" lopp>
+          <source src="songs/aQuietMorning.mp3">
+     </audio>
+
+     <audio class="audiotag2" loop>
+          <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
+     </audio>
+
+     <audio class="audiotag3" lopp>
+          <source src="songs/Take%20me%20back.m4a">
+     </audio>
+
      <!-- This is the audio that gets gets processed by the soundGrabber-->
-          <audio id="loop2" loop>
-               <source src="songs/aQuietMorning.mp3">
-          </audio>
+     <audio class="audiotag1" lopp>
+          <source src="songs/aQuietMorning.mp3">
+     </audio>
+
+     <audio class="audiotag2" loop>
+          <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
+     </audio>
+
+     <audio class="audiotag3" lopp>
+          <source src="songs/Take%20me%20back.m4a">
+     </audio>
+
 
 
 
           <div id="warn">
 
-               <form id="playForm" onsubmit="playMusic(); return false;">
-                    <input type="submit" class="submit" value="touch anywhere to begin"/>
-               </form>
+               <!--UPLOAD GOES HERE -->
 
           </div>
 
-
          <div id="default_music">
-            <form id="music1" onsubmit="changeMusic(); playMusic(); return false;">
+            <form id="music1" onsubmit="start('audiotag1'); return false;">
                 <input type="submit" class="submit" value="A Quiet Morning"/>
             </form>
 
-            <form id="music2" onsubmit="changeMusic(); playMusic(); return false;">
+            <form id="music2" onsubmit="start('audiotag2'); return false;">
                 <input type="submit" class="submit" value="Trap Piano"/>
             </form>
 
-            <form id="music3" onsubmit="changeMusic(); playMusic(); return false">
+            <form id="music3" onsubmit="start('audiotag3'); return false;">
                 <input type="submit" class="submit" value="Take Me Back"/>
             </form>
          </div>
