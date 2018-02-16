@@ -2,9 +2,10 @@
 function start(choice) {
 
      var audio = document.getElementsByClassName(choice)[0];
-     var ctx = new AudioContext();
-       var audioSrc = ctx.createMediaElementSource(audio);
-       var analyser = ctx.createAnalyser();
+     var ctx = new AudioContext(); //Does not work with IOS browsers
+
+     var audioSrc = ctx.createMediaElementSource(audio);
+     var analyser = ctx.createAnalyser();
 
 
        audioSrc.connect(analyser);
