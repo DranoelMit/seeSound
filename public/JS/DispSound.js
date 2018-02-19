@@ -1,11 +1,11 @@
 function setBackground(choice)
 {
      let choices ={
-          'audiotag1' : "Gradient",
-          'audiotag2' : "tunnel",
-          'audiotag3' : "tunnel"
+          'audiotag1' : "Gradient.jpg",
+          'audiotag2' : "tunnel.jpg",
+          'audiotag3' : "Venice.jpeg"
      };
-     document.getElementById('background').setAttribute("src", "./images/" +choices[choice]+".jpg" );
+     document.getElementById('background').setAttribute("src", "./images/" +choices[choice] );
 }
 
 function playMusic(choice){
