@@ -1,9 +1,9 @@
 function setBackground(choice)
 {
      let choices ={
-          'audiotag1' : "Gradient.jpg",
-          'audiotag2' : "tunnel.jpg",
-          'audiotag3' : "Venice.jpeg"
+          'audiotag1' : "Venice.jpeg",
+          'audiotag2' : "Gradient.jpg",
+          'audiotag3' : "tunnel.jpg"
      };
      document.getElementById('background').setAttribute("src", "./images/" +choices[choice] );
 }
@@ -62,7 +62,7 @@ function update(frequencyData){
 //there is 1024 indexes in the array
      var bars = document.getElementsByClassName("soundBars");
      for(i=0; i<bars.length; i++){
-          bars[i].setAttribute("scale", "1 "+  ((3+Math.sqrt(frequencyData[i]))/2) + " 1");
+          bars[i].setAttribute("scale", "1 "+  ((3+(frequencyData[i]))/20) + " 1");
      }
 
      var cubes = document.getElementsByClassName("spazCube");
