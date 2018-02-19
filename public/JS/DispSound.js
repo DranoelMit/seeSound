@@ -1,10 +1,15 @@
 function setBackground(choice)
 {
-     document.getElementById('background').setAttribute("src", "./images/choice" + "360.jpg" );
+     let choices ={
+          'audiotag1' : "Gradient",
+          'audiotag2' : "tunnel",
+          'audiotag3' : "tunnel"
+     };
+     document.getElementById('background').setAttribute("src", "./images/" +choices[choice]+".jpg" );
 }
 
 function playMusic(choice){
-     //setBackground(choice);
+     setBackground(choice);
      var audios = document.getElementsByClassName(choice);
      audios[0].play();
      audios[1].play();
