@@ -34,7 +34,7 @@ function spawn(){
           let x = document.createElement("a-box");
           x.setAttribute("class", "soundBars");
           //54 is just the distance from the camera that looks nice. 6.283 is 2PI  #magicNumbers
-          x.setAttribute("position", ""+(54*Math.cos(i*6.28319/numBars))+" "+.5+" "+(54*Math.sin(i*6.28319/numBars)));
+          x.setAttribute("position", ""+(27*Math.cos(i*6.28319/numBars))+" "+.5+" "+(27*Math.sin(i*6.28319/numBars)));
           x.setAttribute("color", getRandomColor());
           scene.appendChild(x);
      }
@@ -62,7 +62,7 @@ function update(frequencyData){
 //there is 1024 indexes in the array
      var bars = document.getElementsByClassName("soundBars");
      for(i=0; i<bars.length; i++){
-          bars[i].setAttribute("scale", "1 "+  (3+Math.sqrt(frequencyData[i])) + " 1");
+          bars[i].setAttribute("scale", "1 "+  ((3+Math.sqrt(frequencyData[i]))/2) + " 1");
      }
 
      var cubes = document.getElementsByClassName("spazCube");
