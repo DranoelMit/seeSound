@@ -5,11 +5,9 @@ function setBackground(choice)
 
 function playMusic(choice){
      //setBackground(choice);
-     var audios = document.getElementsByTagName('audio');
-
-     for(i=0; i<audios.length;i++){
-     audios[i].play();
-     }
+     var audios = document.getElementsByClassName(choice);
+     audios[0].play();
+     audios[1].play();
      document.getElementById('warn').style.display = "none";
      document.getElementById('default_music').style.display = "none";
      document.getElementById('MusicUpload').style.display = "none";

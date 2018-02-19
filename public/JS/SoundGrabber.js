@@ -1,13 +1,14 @@
 
-window.onload = function() {
+function start(choice) {
      var ctx = new AudioContext();
-       var audio = document.getElementsByTagName("audio")[0];
+       var audio = document.getElementsByClassName(choice)[0];
        var audioSrc = ctx.createMediaElementSource(audio);
        var analyser = ctx.createAnalyser();
 
 
        audioSrc.connect(analyser);
         frequencyData = new Uint8Array(analyser.frequencyBinCount);
+
         spawn();
 
        // loop
@@ -18,6 +19,6 @@ window.onload = function() {
           //console.log(frequencyData);
           update(frequencyData);
        }
-       //audio.play();
+       playMusic(choice);
        render();
      };
