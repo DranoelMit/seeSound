@@ -1,61 +1,59 @@
 <!DOCTYPE html>
 <html>
-     <head>
-          <meta charset="utf-8">
-          <title>seeSound</title>
-          <link rel="stylesheet" type="text/css" href="./CSS/VRstyle.css">
-          <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <title>seeSound</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/VRstyle.css">
+        <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
 
 
-     </head>
-     <body>
+    <body>
 
-<div id="songContainer">
-     <!-- This is the audio that gets processed by the soundGrabber-->
-          <audio class="audiotag1" loop>
-               <source src="songs/aQuietMorning.mp3">
-          </audio>
-     <!-- This is the audio that gets gets processed by the soundGrabber-->
-          <audio class="audiotag1" loop>
-            <source src="songs/aQuietMorning.mp3">
-          </audio>
+        <div id="songContainer">
+            <!-- This is the audio that gets processed by the soundGrabber-->
+            <audio class="audiotag1" loop>
+                <source src="songs/aQuietMorning.mp3">
+            </audio>
+            <!-- This is the audio that gets gets processed by the soundGrabber-->
+            <audio class="audiotag1" loop>
+                <source src="songs/aQuietMorning.mp3">
+            </audio>
 
+            <audio class="audiotag2" loop>
+                <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
+            </audio>
 
+            <audio class="audiotag2" loop>
+                <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
+            </audio>
 
-         <audio class="audiotag2" loop>
-	   <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
-	 </audio>
+            <audio class="audiotag3" loop>
+                <source src="songs/fourblocksboom.mp3">
+            </audio>
 
-         <audio class="audiotag2" loop>
-           <source src="songs/piano-type-beat-sky-piano-trap-type-beat_not-for-profit-use.mp3">
-         </audio>
-
-
-
-         <audio class="audiotag3" loop>
-	   <source src="songs/fourblocksboom.mp3">
-	 </audio>
-
-	 <audio class="audiotag3" loop>
-           <source src="songs/fourblocksboom.mp3">
-         </audio>
+            <audio class="audiotag3" loop>
+                <source src="songs/fourblocksboom.mp3">
+            </audio>
 
 
-     <audio class="audiotag4" loop>
-     </audio>
+            <audio class="audiotag4" loop>
+            </audio>
 
-     <audio class="audiotag4" loop>
-     </audio>
+            <audio class="audiotag4" loop>
+            </audio>
 
-</div>
-          <div id="warn">
-               <div><span style="color:#ff0000;">s</span><span style="color:#ff7f00;">e</span><span style="color:#ffff00;">e</span><span style="color:#00ff00;">S</span>
-                    <span style="color:#00ffff;">o</span><span style="color:#0000ff;">u</span>
-                    <span style="color:#8b00ff;">n</span><span style="color:#ff0000;">d</span></div>
-          </div>
+        </div>
+        
+        <div id="warn">
+            <img src="images/seeSound_logo.png"/>
+            <!--<div><span style="color:#ff0000;">s</span><span style="color:#ff7f00;">e</span><span style="color:#ffff00;">e</span><span style="color:#00ff00;">S</span>
+            <span style="color:#00ffff;">o</span><span style="color:#0000ff;">u</span>
+            <span style="color:#8b00ff;">n</span><span style="color:#ff0000;">d</span></div>-->
+        </div>
 
 
-         <div id="default_music">
+        <div id="default_music">
             <form id="music1" onsubmit="start('audiotag1'); return false;">
                 <input type="submit" class="submit" value="A Quiet Morning"/>
             </form>
@@ -67,23 +65,23 @@
             <form id="music3" onsubmit="start('audiotag3'); return false;">
                 <input type="submit" class="submit" value="Four Blocks"/>
             </form>
-         </div>
+        </div>
 
 
-         <div id="MusicUpload">
-              <input type="file" id="songUpload"/>
-         </div>
+        <div id="MusicUpload">
+            <input type="file" id="songUpload"/>
+        </div>
 
 
-          <!-- THE GRAPHICS -->
-          <a-scene>
-               <a-sky id="background"></a-sky>
+        <!-- THE GRAPHICS -->
+        <a-scene>
+            <a-sky id="background"></a-sky>
 
-          </a-scene>
-          <!-- THE GRAPHICS -->
+        </a-scene>
+        <!-- THE GRAPHICS -->
 
 
-     <script src="./JS/SoundGrabber.js"></script>
-     <script src="./JS/DispSound.js"></script>
-     </body>
+        <script src="./JS/SoundGrabber.js"></script>
+        <script src="./JS/DispSound.js"></script>
+    </body>
 </html>
