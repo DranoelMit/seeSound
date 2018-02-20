@@ -31,8 +31,9 @@ function start(choice) {
          if (FileReader && files && files.length) {
              var fr = new FileReader();
              fr.onload = function () {
-                 document.getElementById("a41").src = fr.result;
-                   document.getElementById("a42").src = fr.result;
+                  let x = fr.result;
+                 document.getElementById("a41").setAttribute("src", x);
+                 document.getElementById("a42").setAttribute("src", x);
              }
              fr.readAsDataURL(files[0]);
              start('audiotag4');
