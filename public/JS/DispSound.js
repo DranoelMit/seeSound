@@ -3,7 +3,8 @@ function setBackground(choice)
      let choices ={
           'audiotag1' : "Venice.jpeg",
           'audiotag2' : "Gradient.jpg",
-          'audiotag3' : "tunnel.jpg"
+          'audiotag3' : "tunnel.jpg",
+          'audiotag4' : "Gradient.jpg"
      };
      document.getElementById('background').setAttribute("src", "./images/" +choices[choice] );
 }

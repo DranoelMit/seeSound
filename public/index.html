@@ -10,7 +10,7 @@
      </head>
      <body>
 
-
+<div id="songContainer">
      <!-- This is the audio that gets processed by the soundGrabber-->
           <audio class="audiotag1" loop>
                <source src="songs/aQuietMorning.mp3">
@@ -41,6 +41,16 @@
          </audio>
 
 
+
+     <audio class="audiotag4" loop>
+          <source id="a41">
+     </audio>
+
+     <audio class="audiotag4" loop>
+          <source id="a42">
+     </audio>
+
+</div>
           <div id="warn">
                <div><span style="color:#ff0000;">s</span><span style="color:#ff7f00;">e</span><span style="color:#ffff00;">e</span><span style="color:#00ff00;">S</span>
                     <span style="color:#00ffff;">o</span><span style="color:#0000ff;">u</span>
@@ -64,7 +74,10 @@
 
 
          <div id="MusicUpload">
-
+             <form id="music4">
+                  <!-- <button class="uploadButton">Upload a file</button> -->
+                  <input id="song" type="file"/>
+             </form>
          </div>
 
 

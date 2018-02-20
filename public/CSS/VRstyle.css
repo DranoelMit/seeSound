@@ -38,11 +38,11 @@
     text-transform: lowercase;
 }
 
-
+/*
 form{
     -webkit-appearance: none;
     font-family:      "Roboto Light", "Calibri", sans-serif;
-}
+} */
 
 #warn{
     text-align:     center;
@@ -88,6 +88,48 @@ margin-top: 200px;
         height: 100%;
     }
 }
+
+
+
+#MusicUpload{
+     z-index:  4;
+     position: fixed;
+     bottom:   0;
+width:    100%;
+}
+
+#music4{
+     border:   none;
+     height:   50px;
+     background-color:   #3568d9;
+     box-shadow:         0 0px 4px #a3a1a1;
+}
+
+/* -----new code------ */
+ /* #MusicUpload {
+     position: fixed;
+     bottom:   0;
+     overflow: hidden;
+     display:  inline-block;
+}
+
+.uploadButton {
+     border:             2px solid gray;
+     color:              gray;
+     background-color:   white;
+     padding:            8px 20px;
+     border-radius:      8px;
+     font-size:          20px;
+     font-weight:        bold;
+}
+
+#MusicUpload input[type=file] {
+     font-size:     100px;
+     position:      fixed;
+     bottom:        0;
+     opacity:       100;
+     z-index:       4;
+} */
 
 @media only screen and (max-width: 400px){
     #default_music{
