@@ -33,7 +33,7 @@ soundUp.onchange = function(){
           sounds[1].src = x;
     };
     reader.readAsDataURL(this.files[0]);
-    start("audiotag4");
+     start("audiotag4");
 }
 
 //
