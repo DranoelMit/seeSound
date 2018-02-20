@@ -15,6 +15,7 @@
             <audio class="audiotag1" loop>
                 <source src="songs/aQuietMorning.mp3">
             </audio>
+            
             <!-- This is the audio that gets gets processed by the soundGrabber-->
             <audio class="audiotag1" loop>
                 <source src="songs/aQuietMorning.mp3">
@@ -36,7 +37,7 @@
                 <source src="songs/fourblocksboom.mp3">
             </audio>
 
-
+            
             <audio class="audiotag4" loop>
             </audio>
 
@@ -46,7 +47,7 @@
         </div>
         
         <div id="warn">
-            <img src="images/seeSound_logo.png"/>
+            <img class="mage" src="images/seeSound_logo.png"/>
             <!--<div><span style="color:#ff0000;">s</span><span style="color:#ff7f00;">e</span><span style="color:#ffff00;">e</span><span style="color:#00ff00;">S</span>
             <span style="color:#00ffff;">o</span><span style="color:#0000ff;">u</span>
             <span style="color:#8b00ff;">n</span><span style="color:#ff0000;">d</span></div>-->
@@ -54,6 +55,7 @@
 
 
         <div id="default_music">
+            
             <form id="music1" onsubmit="start('audiotag1'); return false;">
                 <input type="submit" class="submit" value="A Quiet Morning"/>
             </form>
@@ -65,6 +67,7 @@
             <form id="music3" onsubmit="start('audiotag3'); return false;">
                 <input type="submit" class="submit" value="Four Blocks"/>
             </form>
+            
         </div>
 
 
@@ -76,10 +79,7 @@
         <!-- THE GRAPHICS -->
         <a-scene>
             <a-sky id="background"></a-sky>
-
         </a-scene>
-        <!-- THE GRAPHICS -->
-
 
         <script src="./JS/SoundGrabber.js"></script>
         <script src="./JS/DispSound.js"></script>
