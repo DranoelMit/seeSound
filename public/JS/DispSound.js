@@ -1,10 +1,10 @@
 function setBackground(choice)
 {
      let choices ={
-          'audiotag1' : "Venice.jpeg",
-          'audiotag2' : "Gradient.jpg",
-          'audiotag3' : "tunnel.jpg",
-          'audiotag4' : "Gradient.jpg"
+          'audiotag1' : "Gradient1.jpg",
+          'audiotag2' : "Gradient2.jpg",
+          'audiotag3' : "Gradient3.jpg",
+          'audiotag4' : "Gradient4.jpg"
      };
      document.getElementById('background').setAttribute("src", "./images/" +choices[choice] );
 }
@@ -35,7 +35,7 @@ function spawn(){
           let x = document.createElement("a-box");
           x.setAttribute("class", "soundBars");
           //54 is just the distance from the camera that looks nice. 6.283 is 2PI  #magicNumbers
-          x.setAttribute("position", ""+(27*Math.cos(i*6.28319/numBars))+" "+.5+" "+(27*Math.sin(i*6.28319/numBars)));
+          x.setAttribute("position", ""+(27*Math.cos(i*6.28319/numBars))+" "+1.5+" "+(27*Math.sin(i*6.28319/numBars)));
           x.setAttribute("color", getRandomColor());
           scene.appendChild(x);
      }

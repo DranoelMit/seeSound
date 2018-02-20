@@ -5,4 +5,7 @@ by Tim Leonard, Gil Austria, Caleb Choy, and Liam Nagel
 
 ## Music Provided by:
 * James Moon
-* freemusicarchive.org (Soft and Furious, Anonymous420)
+* http://freemusicarchive.org (Soft and Furious, Anonymous420)
+
+## Images Provided by:
+* https://colorandcolor.tumblr.com/
