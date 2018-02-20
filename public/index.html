@@ -43,11 +43,9 @@
 
 
      <audio class="audiotag4" loop>
-          <source id="a41" src="">
      </audio>
 
      <audio class="audiotag4" loop>
-          <source id="a42" src="">
      </audio>
 
 </div>
@@ -74,10 +72,12 @@
 
 
          <div id="MusicUpload">
+              <input type="file" id="songUpload"/>
+              <audio id="sound1"></audio>
+           <!--
              <form id="music4">
-                  <!-- <button class="uploadButton">Upload a file</button> -->
-                  <input id="song" type="file"/>
-             </form>
+                  <input id="song" onchange="checkFile(this); return false;" type="file"/>
+             </form> -->
          </div>
 
 

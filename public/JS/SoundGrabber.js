@@ -23,28 +23,49 @@ function start(choice) {
        render();
      };
 
-     document.getElementById('song').onchange = function (evt) {
-         var tgt = evt.target || window.event.srcElement,
-             files = tgt.files;
+var soundUp = document.getElementById("songUpload");
+soundUp.onchange = function(){
+     var sounds = document.getElementsByClassName('audiotag4');
+     var reader = new FileReader();
+     reader.onload = function(e) {
+          let x = this.result;
+          sounds[0].src = x;
+          sounds[1].src = x;
+    };
+    reader.readAsDataURL(this.files[0]);
+    start("audiotag4");
+}
 
-         // FileReader support
-         if (FileReader && files && files.length) {
-             var fr = new FileReader();
-             fr.onload = function () {
-                  let x = fr.result;
-                 document.getElementById("a41").setAttribute("src", x);
-                 document.getElementById("a42").setAttribute("src", x);
-             }
-             fr.readAsDataURL(files[0]);
-             start('audiotag4');
-         }
-
-         // Not supported
-         else {
-             // fallback -- perhaps submit the input to an iframe and temporarily store
-             // them on the server until the user's session ends.
-         }
-     }
+//
+// var sound1 = document.getElementById('a41');
+// var sound2 = document.getElementById('a42');
+//
+//   var reader = new FileReader();
+//   reader.onload = function(e) {
+//     sound1.src = this.result;
+//     sound2.src = this.result;
+//
+//
+//     };
+//   reader.readAsDataURL(soundFile.files[0]);
+//   start('audiotag4');
+// }
+//      //     // FileReader support
+//      //     if (songFile){
+     //
+     //              let x = URL.createObjectURL(songFile);
+     //             document.getElementById("a41").setAttribute("src", x);
+     //             document.getElementById("a42").setAttribute("src", x);
+     //
+     //         start('audiotag4');
+     //     }
+     //
+     //     // Not supported
+     //     else {
+     //         // fallback -- perhaps submit the input to an iframe and temporarily store
+     //         // them on the server until the user's session ends.
+     //     }
+     // }
 
 //
 // function fileCheck(songFile){

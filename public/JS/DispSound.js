@@ -35,7 +35,7 @@ function spawn(){
           let x = document.createElement("a-box");
           x.setAttribute("class", "soundBars");
           //54 is just the distance from the camera that looks nice. 6.283 is 2PI  #magicNumbers
-          x.setAttribute("position", ""+(27*Math.cos(i*6.28319/numBars))+" "+1.5+" "+(27*Math.sin(i*6.28319/numBars)));
+          x.setAttribute("position", ""+(27*Math.cos(i*6.28319/numBars))+" "+1.6+" "+(27*Math.sin(i*6.28319/numBars)));
           x.setAttribute("color", getRandomColor());
           scene.appendChild(x);
      }
