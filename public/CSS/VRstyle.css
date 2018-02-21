@@ -189,3 +189,7 @@ input[type=file] {
         height:     100%;
     }
 }
+
+.a-enter-vr-button {
+		   display:  none;
+}
