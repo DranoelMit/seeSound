@@ -75,11 +75,20 @@
 }
 
 @keyframes example {
-    from {opacity: 100}
-    to {opacity: 0;
-    display: none;}
-    
-    
+    from    {opacity: 100}
+    to      {opacity: 0}
+}
+
+#default_music .submit{
+    opacity:            0;
+    animation-name:     buttonAnimation;
+    animation-duration: 3s;
+    animation-delay:    2.5s;
+}
+
+@keyframes buttonAnimation{
+    from    {opacity: 0}
+    to      {opacity: 100}
 }
 
 .logoimage{
