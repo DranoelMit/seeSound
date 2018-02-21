@@ -89,14 +89,14 @@
 
 
 /* -----new code------ */
- /* #MusicUpload {
+  #MusicUpload {
      position: fixed;
      bottom:   0;
      overflow: hidden;
      display:  inline-block;
 }
 
-.uploadButton {
+#songUpload {
      border:             2px solid gray;
      color:              gray;
      background-color:   white;
@@ -112,7 +112,7 @@
      bottom:        0;
      opacity:       100;
      z-index:       4;
-} */
+} 
 
 @media only screen and (max-width: 400px){
     #default_music{
