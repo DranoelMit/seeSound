@@ -16,7 +16,7 @@ function playMusic(choice){
     document.getElementById('warn').style.display = "none";
     document.getElementById('default_music').style.display = "none";
     document.getElementById('MusicUpload').style.display = "none";
-    document.getElementsByClassName(".a-enter-vr-button").style.display = "inherit";
+    document.getElementsByClassName("a-enter-vr-button").style.display = "inherit";
 }
 
 function getRandomColor() {
