@@ -115,9 +115,9 @@ margin-top: 200px;
     
     
 }
-body{ 
-    background: url("../images/gradient5.jpeg") top right no-repeat; 
-    background-attachment:  fixed; 
+.round{
+    width:      100%;
+    z-index:    0;
 }
 
 .mage{
