@@ -218,7 +218,7 @@
 } 
 */
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 400px){
     #default_music{
         display:    flex;
         flex-flow:  column wrap;
@@ -239,6 +239,7 @@
     .btn {
         padding:            2% 0% 2% 0%;
         align-items:        center;
+        font-size:          22px;
     }
     #MusicUpload input[type=file] {
         padding:        8% 10% 8% 10%;
@@ -250,6 +251,7 @@
     .btn {
         padding:            1% 0% 1% 0%;
         align-items:        center;
+        font-size:          22px;
     }
 }
 
