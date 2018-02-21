@@ -1,3 +1,4 @@
+
 #logo{
     text-align:     center;
     position:       fixed;
@@ -52,19 +53,7 @@
     width:    100%;
 }
 
-#music4{
-    border:             none;
-    height:             50px;
-    background-color:   #3568d9;
-    box-shadow:         0 0px 4px #a3a1a1;
-    padding:            2.5%;
 
-    display:            flex;
-    align-content:      center;
-    justify-content:    center;
-    
-    
-}
 .backgroundImage{
     width:      100%;
     z-index:    0;
