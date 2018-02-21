@@ -85,6 +85,7 @@
     animation-duration: 3s;
     animation-delay:    2.5s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
 @keyframes buttonAnimation{
