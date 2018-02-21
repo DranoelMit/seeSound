@@ -1,3 +1,5 @@
+
+
 #default_music {
     background-color:   transparent;
     position:           absolute;
@@ -112,6 +114,10 @@ margin-top: 200px;
     justify-content:    center;
     
     
+}
+body{ 
+    background: url("../images/gradient5.jpeg") top right no-repeat; 
+    background-attachment:  fixed; 
 }
 
 .mage{
