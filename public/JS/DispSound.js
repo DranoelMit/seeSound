@@ -13,7 +13,7 @@ function playMusic(choice){
     var audios = document.getElementsByClassName(choice);
     audios[0].play();
     audios[1].play();
-    document.getElementById('warn').style.display = "none";
+    document.getElementById('logo').style.display = "none";
     document.getElementById('default_music').style.display = "none";
     document.getElementById('MusicUpload').style.display = "none";
     document.getElementsByClassName("a-enter-vr-button")[0].style.display = "inherit";

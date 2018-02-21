@@ -97,37 +97,13 @@ form{
     to {opacity: 0;
     display: none;}
     
+    
 }
 
 .mage{
     width: 85%;
 }
 
-/*
-input[type=file] {
-    width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	
-    
-}
-
-#music4 label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: green;
-    display: inline-block;
-    cursor: pointer;
-}
-
-#music4:focus label,
-#music4 label:hover {
-    background-color: red;
-}
-*/
 
 
 /* -----new code------ */
