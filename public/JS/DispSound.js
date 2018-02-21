@@ -1,3 +1,5 @@
+window.setTimeout("document.getElementById('background').style.display='none';", 3000)
+
 function setBackground(choice){
     let choices ={
         'audiotag1' : "Gradient1.jpg",
