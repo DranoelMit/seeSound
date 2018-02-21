@@ -1,4 +1,4 @@
-window.setTimeout("document.getElementById('background').style.display='none';", 3000)
+window.setTimeout("document.getElementById('background').style.display='none';", 2200)
 
 
 
