@@ -119,16 +119,27 @@
 
 .logoimage{
     width:                      70%;
+   
+    
     animation-name:             moveUp;
     animation-duration:         2.5s;
     animation-fill-mode:        forwards;
     animation-timing-function:  ease-out;
+    
+    
+}
+
+#logo{
+    animation-name:         buttonAnimation;
+    animation-duration:     7s;
+    animation-fill-mode:    forwards;
 }
 
 @keyframes moveUp{
     from    {padding-top:       5%}
     to      {padding-bottom:    20%}
 }
+
 
 
 #MusicUpload {
@@ -207,7 +218,7 @@
 } 
 */
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 800px){
     #default_music{
         display:    flex;
         flex-flow:  column wrap;
@@ -226,7 +237,7 @@
         height:         100%;
     }
     .btn {
-        padding:            8% 10% 8% 10%;
+        padding:            2% 0% 2% 0%;
         align-items:        center;
     }
     #MusicUpload input[type=file] {
@@ -235,8 +246,11 @@
 
 }
 
-@media (orientation: landscape) {
-
+@media only screen and (max-height: 800px){
+    .btn {
+        padding:            1% 0% 1% 0%;
+        align-items:        center;
+    }
 }
 
 .a-enter-vr-button {
