@@ -36,7 +36,9 @@
     border:                 none;
 /*    border-style:           outset;*/
 /*    border-width:           3px;*/
-
+    border-bottom-width:    13px;
+    
+    box-shadow:             1px 1px 2px #BFBFBF;
     text-decoration:        none;
     margin:                 0px 0px;
     font-size:              3vw;
@@ -59,6 +61,7 @@
     z-index:                0;
     animation-name:         reveal;
     animation-duration:     2.5s;
+    animation-delay:        .7s;
     animation-fill-mode:    forwards;
     
 }
@@ -68,14 +71,37 @@
     to      {opacity: 0}
 }
 
-#default_music .submit{
+
+
+#default_music #submit1{
     opacity:                0;
     animation-name:         buttonAnimation;
     animation-duration:     1.8s;
-    animation-delay:        2.2s;
+    animation-delay:        2.9s;
     animation-fill-mode:    forwards;
     cursor:                 pointer;
 }
+#default_music #submit2{
+    opacity:                0;
+    animation-name:         buttonAnimation;
+    animation-duration:     1.8s;
+    animation-delay:        3.2s;
+    animation-fill-mode:    forwards;
+    cursor:                 pointer;
+}
+#default_music #submit3{
+    opacity:                0;
+    animation-name:         buttonAnimation;
+    animation-duration:     1.8s;
+    animation-delay:        3.5s;
+    animation-fill-mode:    forwards;
+    cursor:                 pointer;
+}
+
+
+
+
+
 
 @keyframes buttonAnimation{
     from    {opacity: 0}
