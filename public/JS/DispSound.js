@@ -1,4 +1,4 @@
-window.setTimeout("document.getElementById('backgroundLanding').style.display='none';", 2200)
+window.setTimeout("document.getElementById('backgroundLanding').style.display='none';", 2500)
 
 
 
