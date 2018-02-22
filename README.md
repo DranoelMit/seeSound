@@ -1,5 +1,5 @@
 # seeSound
-https://dranoelmit.github.io/seeSound/
+Check it out ---> https://dranoelmit.github.io/seeSound/ <---
 
 in-browser VR music visualization using A-Frame for SCSC Spring Code Jam
 
