@@ -249,6 +249,9 @@ body{
     #MusicUpload input[type=file] {
         padding:        8% 10% 8% 10%;
     }
+    #MusicUpload {
+        display: none;
+    }
 
 }
 
@@ -269,6 +272,14 @@ body{
         
 
     }
+    #MusicUpload {
+        display: none;
+    }
+/*
+    #logo, #slogan{
+        padding-top: 50%;
+    }
+*/
 }
 
 .a-enter-vr-button {
