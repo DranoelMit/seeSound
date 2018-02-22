@@ -141,7 +141,7 @@
 .last-word::after {
     opacity: 0;
     text-shadow:             0px 3px 20px #EA9041;
-    font-size:      45px;
+    font-size:      5vw;
     content:        'hear';
     color:          transparent;
     position:       absolute;
@@ -157,7 +157,7 @@
 
 div h2{
     font-family: 'Josefin Slab', serif;
-    font-size:      45px;
+    font-size:      5vw;
     position:       fixed;
     top:            0;
     width:          100%;
@@ -257,6 +257,17 @@ body{
         padding:            1% 0% 1% 0%;
         align-items:        center;
         font-size:          22px;
+    }
+    
+    .last-word::after {
+    font-size:      4vw;
+    
+    }
+
+    div h2{
+        font-size:      4vw;
+        
+
     }
 }
 
