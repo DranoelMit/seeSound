@@ -20,6 +20,7 @@ function playMusic(choice){
     document.getElementById('logo').style.display = "none";
     document.getElementById('default_music').style.display = "none";
     document.getElementById('MusicUpload').style.display = "none";
+    document.getElementById('slogan').style.display = "none";
     document.getElementsByClassName("a-enter-vr-button")[0].style.display = "inherit";
 }
 
