@@ -1,4 +1,5 @@
 # seeSound
+## NOTE: Unfortunately this project has become depricated and no longer functions properly on mobile devices due to some gyroscope issues :(
 Check it out ---> https://dranoelmit.github.io/seeSound/ <---
 
 in-browser VR music visualization using A-Frame for SCSC Spring Code Jam
